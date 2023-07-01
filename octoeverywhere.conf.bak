@@ -6,17 +6,15 @@ max_file_count = 3
 
 [server]
 # Uniquely identifies your printer. Don't change or will have to re-link your printer with the service.
-printer_id = B992PN4V7A5G0ES2YEUKQ0K8QN0SCEPJW1AOHDVQFADLJ34Y6OG2I1IQUXVQ
+printer_id = BBS4DDROG3DJ9BV1DNY7X3OA3WQ09JGZXHOOJRT3AIRN18RV5V2FMRA76B4V
 # A private key linked to your printer ID. NEVER share this and also don't change it.
-private_key = 4aq2a5TNlB5lTsLavoPG4ed3gcLTuSGHTfSYSSOoxhHlPFs9OuKSywjbbZG78Bsg3bpkorpbjZOMW558
+private_key = 3yzmZARVypiuu24kTPozFSaVmbfDZ7pKlXYP94ofbiMX0BM7nEU7qsujDKifyU28dWIFrVWyBNqWKYvx
 
 [relay]
 # The port used for http relay. If your desired frontend runs on a different port, change this value.
 frontend_port = 80
 
 [webcam]
-# This is the webcam name OctoEverywhere will use for Gadget AI, notifications, and such. This much match the camera 'Name' from your Mainsail of Fluidd webcam settings. The default value of 'Default' will pick whatever camera the system can find.
-webcam_name_to_use_as_primary = gold
 # Enables or disables auto webcam setting detection. If enabled, OctoEverywhere will find the webcam settings configured via the frontend (Fluidd, Mainsail, etc) and use them. Disable to manually set the values and have them not be overwritten.
 auto_settings_detection = True
 # Webcam streaming URL. This can be a local relative path (ex: /webcam/?action=stream) or absolute http URL (ex: http://10.0.0.1:8080/webcam/?action=stream or http://webcam.local/webcam/?action=stream)
@@ -29,4 +27,6 @@ flip_horizontally = False
 flip_vertically = False
 # Rotates the webcam image. Valid values are 0, 90, 180, or 270
 rotate = 0
+# This is the webcam name OctoEverywhere will use for Gadget AI, notifications, and such. This much match the camera 'Name' from your Mainsail of Fluidd webcam settings. The default value of 'Default' will pick whatever camera the system can find.
+webcam_name_to_use_as_primary = gold
 

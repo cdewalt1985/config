@@ -50,6 +50,10 @@ enable_system_updates = True
 enable_packagekit = True
 channel = dev
 
+[timelapse]
+output_path = ~/printer_2_data/timelapse/
+frame_path = /tmp/timelapse/printer_2
+
 [update_manager mainsail]
 type = web
 channel = beta
