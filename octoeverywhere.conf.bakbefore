@@ -1,22 +1,4 @@
-[logging]
-# The active logging level. Valid values include: DEBUG, INFO, WARNING, or ERROR.
-log_level = INFO
-max_file_size_mb = 5
-max_file_count = 3
-
-[server]
-# Uniquely identifies your printer. Don't change or will have to re-link your printer with the service.
-printer_id = XP9KTHOMQUGLL8R5O12Z9DRHDGPB8JRCX1OGK2U1MMONCGA0XQAIHZZGRSCP
-# A private key linked to your printer ID. NEVER share this and also don't change it.
-private_key = svAJGbhXJb8LnSXs3W5d3dG14ayWCgfOyj5h6DKXzbx4xJ21jmKaXwBjmyh3ZZWB7K43TF2PE4lN4aE9
-
-[relay]
-# The port used for http relay. If your desired frontend runs on a different port, change this value.
-frontend_port = 80
-
 [webcam]
-# This is the webcam name OctoEverywhere will use for Gadget AI, notifications, and such. This much match the camera 'Name' from your Mainsail of Fluidd webcam settings. The default value of 'Default' will pick whatever camera the system can find.
-webcam_name_to_use_as_primary = green
 # Enables or disables auto webcam setting detection. If enabled, OctoEverywhere will find the webcam settings configured via the frontend (Fluidd, Mainsail, etc) and use them. Disable to manually set the values and have them not be overwritten.
 auto_settings_detection = True
 # Webcam streaming URL. This can be a local relative path (ex: /webcam/?action=stream) or absolute http URL (ex: http://10.0.0.1:8080/webcam/?action=stream or http://webcam.local/webcam/?action=stream)
@@ -29,4 +11,22 @@ flip_horizontally = False
 flip_vertically = False
 # Rotates the webcam image. Valid values are 0, 90, 180, or 270
 rotate = 0
+# This is the webcam name OctoEverywhere will use for Gadget AI, notifications, and such. This much match the camera 'Name' from your Mainsail of Fluidd webcam settings. The default value of 'Default' will pick whatever camera the system can find.
+webcam_name_to_use_as_primary = green
+
+[logging]
+# The active logging level. Valid values include: DEBUG, INFO, WARNING, or ERROR.
+log_level = INFO
+max_file_size_mb = 5
+max_file_count = 3
+
+[server]
+# Uniquely identifies your printer. Don't change or will have to re-link your printer with the service.
+printer_id = WUDRG17ICNI5UANCX1L6NSCCRD56LY14C8EK7KKSIS4ATQLBA35FQCAP95XS
+# A private key linked to your printer ID. NEVER share this and also don't change it.
+private_key = fdO9RJ3IvTDiS0tnYvdE1AHvdNexOdJqrprZXH942ZkddqvkfG5bGgQYWwaU5ptwky85QR8hkHl9S4QQ
+
+[relay]
+# The port used for http relay. If your desired frontend runs on a different port, change this value.
+frontend_port = 80
 

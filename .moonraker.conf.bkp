@@ -50,6 +50,10 @@ enable_system_updates = True
 enable_packagekit = True
 channel = dev
 
+[timelapse]
+output_path = ~/printer_1_data/timelapse/
+frame_path = /tmp/timelapse/printer_1
+
 [update_manager mainsail]
 type = web
 channel = beta
@@ -79,7 +83,7 @@ requirements = scripts/KlipperScreen-requirements.txt
 install_script = scripts/KlipperScreen-install.sh
 managed_services = KlipperScreen
 
-[update_manager octoeverywhere-2]
+[update_manager octoeverywhere-1]
 type = git_repo
 channel = beta
 path = /home/pi/octoeverywhere
@@ -88,7 +92,7 @@ env = /home/pi/octoeverywhere-env/bin/python
 requirements = requirements.txt
 install_script = install.sh
 managed_services = 
-	octoeverywhere-2
+	octoeverywhere-1
 
 [update_manager crowsnest]
 type = git_repo
