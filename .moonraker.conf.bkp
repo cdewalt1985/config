@@ -63,13 +63,6 @@ path = ~/kiauh
 origin = https://github.com/th33xitus/kiauh.git
 is_system_service = False
 
-[update_manager crowsnest]
-type = git_repo
-path = ~/crowsnest
-origin = https://github.com/mainsail-crew/crowsnest.git
-managed_services = crowsnest
-install_script = tools/install.sh
-
 [update_manager sonar]
 type = git_repo
 path = ~/sonar
